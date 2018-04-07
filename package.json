@@ -1,0 +1,21 @@
+{
+    "name": "yibai",
+    "version": "1.0.0",
+    "description": "xcx",
+    "keywords": [
+        "xcx"
+    ],
+    "homepage": "http://JSLite.io",
+    "author": "wangchen",
+    "repository": {
+        "type": "git",
+        "url": ""
+    },
+    "licenses": "Apache",
+    "idoc": {
+        "theme": "handbook",
+        "md": [
+            "index.md"
+        ]
+    }
+}
