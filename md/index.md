@@ -89,9 +89,11 @@
 - 需前往微信公众平台申请小程序账号，登录小程序账号，在设置-开发设置获取AppId
 
 ![alt text](http://bbs.zhichiwangluo.com/data/attachment/forum/201705/24/165457kx9xfxqrtfyyomut.png "Title")
-- AppSecret（小程序密钥）微信公众平台登录小程序账号，在设置-开发设置里获取首次获取小程序密钥后谨慎保存，千万不要重置。重置密钥会导致小程序体验故障。
+- AppSecret（小程序密钥）
+    微信公众平台登录小程序账号，在设置-开发设置里获取首次获取小程序密钥后谨慎保存，千万不要重置。重置密钥会导致小程序体验故障。
 
-- 服务器配置 同样微信公众平台登录小程序账号，在设置-开发设置-服务器域名里填写即可使用了即速应用后台，微信小程序服务器域名请统一填写以下4个域名
+- 服务器配置 
+    同样微信公众平台登录小程序账号，在设置-开发设置-服务器域名里填写即可使用了即速应用后台，微信小程序服务器域名请统一填写以下4个域名
 1. xcx.yibai.com
 2. xcx.yibai.cn
 3. jisuapp.yibai.com
@@ -110,6 +112,7 @@
 ![alt text](http://bbs.zhichiwangluo.com/data/attachment/forum/201710/10/142821cgsgpg2f71pfsf5v.png "Title")
 
 - 步骤三：确认登录后，选择小程序项目
+
 ![alt text](http://bbs.zhichiwangluo.com/data/attachment/forum/201710/10/142334tv4j6669f6hvfrol.png "Title")
 
 
@@ -121,7 +124,8 @@
       点击开发者工具右上角-模拟器、编辑器、调试器，可查看小程序的结构和代码。点击预览，可手机扫码体验小程序！
 ![alt text](http://bbs.zhichiwangluo.com/data/attachment/forum/201710/10/143632uab91rku07kgkbdu.png "Title")
 
-- 步骤六：完善小程序项目设置，域名信息点击调试界面右上角-详情，可进行项目设置，查看域名信息（设置勾选可参考下图）备注，域名需配置成 xcx.zhichiweiye.com（填写错误提示request：fail 不在以下合法域名列表中），修改域名请在微信公众平台登陆微信小程序账号－设置 - 开发设置 - 服务器域名中修改，微信开发者工具是不提供域名修改的！
+- 步骤六：完善小程序项目设置
+        域名信息点击调试界面右上角-详情，可进行项目设置，查看域名信息（设置勾选可参考下图）备注，域名需配置成 xcx.zhichiweiye.com（填写错误提示request：fail 不在以下合法域名列表中），修改域名请在微信公众平台登陆微信小程序账号－设置 - 开发设置 - 服务器域名中修改，微信开发者工具是不提供域名修改的！
 ![alt text](http://bbs.zhichiwangluo.com/data/attachment/forum/201801/19/144618ic2as9gbbfo9c8b9.jpg "Title")
 
 - 步骤七：上传小程序至微信公众平台调试完成，点击上传，填写版本号和项目备注，确定
