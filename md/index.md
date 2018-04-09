@@ -1,5 +1,5 @@
-
-# 1、企业注册
+# （一）企业自己自己注册小程序（卖产品）
+## 1、企业注册
 1、注册一个邮箱，可以是QQ邮箱也可以是其他邮箱，用来后面微信小程序的注册。
 
 ![alt text](http://bbs.zhichiwangluo.com/data/attachment/forum/201705/15/001545nyjl04j1or4qrq4i.png "Title")
@@ -76,14 +76,14 @@
 
 17、支付完成后，进入认证审核。页面上会公布第三方审核公司的联系方式，在审核过程中该公司将有可能与你联系沟通，如果在审核过程中遇到问题，可以拨打该公司的热线电话进行咨询。
 
-# 2、使用医百小程序商城模板
-## 企业登录商城选择模板（非空白）
+## 2、使用医百小程序商城模板
+### 企业登录商城选择模板（非空白）
 ![alt text](http://bbs.zhichiwangluo.com/data/attachment/forum/201705/24/154548lesonsy3rnr1njov.png "Title")
 
-## 企业登录商城选择空白模板，一步步搭建
+### 企业登录商城选择空白模板，一步步搭建
 ![alt text](http://bbs.zhichiwangluo.com/data/attachment/forum/201705/24/154709guiifutnuazx1188.png "Title")
 
-# 3、填写相关信息使用商城打包生成你代码
+## 3、填写相关信息使用商城打包生成你代码
 ![alt text](http://bbs.zhichiwangluo.com/data/attachment/forum/201705/24/165102zpg1lgpxgzxghvsg.png "Title")
 
 - 需前往微信公众平台申请小程序账号，登录小程序账号，在设置-开发设置获取AppId
@@ -103,7 +103,7 @@
 
 ![alt text](http://bbs.zhichiwangluo.com/data/attachment/forum/201705/24/173559qvcjr881jk4m8jfu.png "Title")
 
-# 4、微信开发工具上传小程序项目/审核/上线
+## 4、微信开发工具上传小程序项目/审核/上线
 - 步骤一：下载并安装微信开发者工具，打开工具，小程序管理员微信号或小程序绑定的开发者微信号扫码登录
 ![alt text](http://bbs.zhichiwangluo.com/data/attachment/forum/201710/10/141954rut27ktgti4takik.png "Title")
 
@@ -141,3 +141,87 @@
       填写至少一个功能页面信息（可以点击添加功能页面），提交审核，等待微信审核（约2/3个工作日），通过审核后即可在微信客户端搜索你的小程序了
 ![alt text](http://bbs.zhichiwangluo.com/data/attachment/forum/201710/10/154420m6t78nfthhf77fnq.png "Title")
 
+# (二)企业都在医百小程序里（做平台）
+## 入口（小程序前端代码大小有限制）
+- 给平台内商家生成他主页地址的二维码->扫二维码
+- 订餐类小程序，通过地理位置选择哪个店(麦当劳、肯德基)
+
+![alt text](https://s7.postimg.org/ijfijwcgb/image.jpg "Title")
+- 通过平台内的指引选择或者搜索某个商户
+- 安卓手机可以把小程序内的某个页面，添加到桌面生成app图标
+
+小程序的入口被限定了，一般只能通过搜索或者扫码进入。搜索只针对小程序注册用户，和平台内的商家无关。
+平台内的商家是不能用：
+- 微信内的小程序搜索
+- 附近的小程序
+
+
+# (三)小程序消息推送
+小程序通过模板消息实现消息推送。例如：
+- 当消费者购买商品后，如何通知他们东西发货了呢？
+- 如果用户报名成功，怎么样快速又方便地告知他们报名结果呢？
+- 我预约了一场直播，通知他这场直播要开始了？
+
+这时候，我们就需要用到小程序的「模板消息」接口。
+
+官方文档中规定，用户在小程序中进行支付或提交表单，小程序才能向用户发送模板消息。小程序不能通过模板消息接口，群发推广信息、垃圾信息等。
+## 如何发送模板消息
+微信小程序发送模板消息的大致步骤是：
+1. 开发者在微信公众平台，创建一个新的消息模板；
+2. 获取支付过程或提交过程中，微信返回的消息发送码；
+3. 开发者利用消息发送码，带上模板中非固定的信息，向微信发起发送消息的请求。
+
+### 创建新的消息模板
+
+- 打开 https://mp.weixin.qq.com 并登录小程序帐户。
+- 点击左侧菜单中的「模板消息」。
+- 进入顶部的「模板库」，从微信预置的模板中，选择一个合适的模板。
+- 确定模板中所使用的关键词。
+
+如果关键词列表中没有你希望使用的关键词，你可以申请新的关键词。但申请新的关键词需要提交审核。
+![alt text](http://mmbiz.qpic.cn/mmbiz_jpg/dzvQgHlKewx2Nbx5PeUqNeichrTsgCzPtx2d1yIN0zUKOSJicj1B9wGpTo9llaEVxtFbaaD1fkNyzcdMpXSrltIw/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1 "Title")
+
+模板添加后，会获得模板 ID（template_id），稍后就可以用到它。
+
+![alt text](http://mmbiz.qpic.cn/mmbiz_jpg/dzvQgHlKewx2Nbx5PeUqNeichrTsgCzPtQs9DMpljAnnxibsibxpFdsshyc8ddl0oxuYJwtImJBuB3auODLdstJpQ/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1 "Title")
+
+### 获取模板消息发送码
+创建消息模板后，还需要「发送码」，才能发送模板消息。
+以提交表单为例，看看发送码的获取方式。
+首先，在小程序中，放置一个带有 report-submit 属性的表单：
+
+![alt text](http://mmbiz.qpic.cn/mmbiz_png/dzvQgHlKewx2Nbx5PeUqNeichrTsgCzPtcx1Ef9Vj3qn1F3LYxPYwQxan6kXhKUENojl2URhgavDcYZhbRw1cUw/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1 "Title")
+
+然后，在页面的 Page() 函数中，新建一个提交表单的函数。
+在函数中，就能接收到 formId，也就是发送码了。
+![alt text](http://mmbiz.qpic.cn/mmbiz_png/dzvQgHlKewx2Nbx5PeUqNeichrTsgCzPtgvj81iadMfvvm9ote2u9SJ0YvRVO5hszIdAR44UqPD6juHbw9WicCpeg/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1 "Title")
+如果你想在微信发起支付请求后，获取发送码，那么你需要调用微信支付中的「统一下单」接口。
+当「统一下单」接口请求成功之后，回调值中的「预支付交易会话标识」，也就是 prepay_id，就可以作为发送码来使用。
+### 发送模板消息
+经过这么多步骤，终于可以向用户发送模板消息了。在这一步，所有过程都是在开发者的服务器完成。
+首先，通过 GET 方式，获取到小程序的 Access Token：
+
+![alt text](http://mmbiz.qpic.cn/mmbiz_png/dzvQgHlKewx2Nbx5PeUqNeichrTsgCzPtvpmzFUzXSkq16FMHRibh5eNDmnkCFhleVGrCbceOichZziaHbwqGWibUwQ/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1 "Title")
+
+接着，用 POST 方式，向微信提交模板消息的发送请求。
+请求地址为：
+
+![alt text](http://mmbiz.qpic.cn/mmbiz_png/dzvQgHlKewx2Nbx5PeUqNeichrTsgCzPtyV4ZIGuwQVBZs4dpOxYyqH2v0rtF0Iqiclxwo7yK7jH4ibvdMCM2PWkA/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1 "Title")
+
+请求数据的格式如下：
+
+![alt text](http://mmbiz.qpic.cn/mmbiz_png/dzvQgHlKewx2Nbx5PeUqNeichrTsgCzPtTY6AC3Bw6ze1IqibRRiblhaPpex41qTk7xZpHDb5EfgI6nXvlRveTdaQ/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1 "Title")
+
+当接口返回成功消息时，就代表着模板消息已经发送出去了。
+
+## 客服消息
+客服消息会话入口有两个：
+
+1、小程序内：开发者在小程序内添加客服消息按钮组件，用户可在小程序内唤起客服会话页面，给小程序发消息；
+
+2、已使用过的小程序客服消息会聚合显示在微信会话“小程序客服消息”内，用户可以在小程序外查看历史客服消息，并给小程序客服发消息。
+
+![alt text](https://mp.weixin.qq.com/debug/wxadoc/introduction/image/x11.png "Title")
+
+
+![alt text]( "Title")
