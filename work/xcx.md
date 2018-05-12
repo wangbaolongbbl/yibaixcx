@@ -1,8 +1,11 @@
 ## （一）企业注册
 ### 1、企业注册小程序
 1、注册一个邮箱，可以是QQ邮箱也可以是其他邮箱，用来后面微信小程序的注册。
-
 ![alt text](http://bbs.zhichiwangluo.com/data/attachment/forum/201705/15/001545nyjl04j1or4qrq4i.png "Title")
+<center>
+[大图](http://bbs.zhichiwangluo.com/data/attachment/forum/201705/15/001545nyjl04j1or4qrq4i.png)
+</center>
+
 
 2、[登陆微信公众平台](https://mp.weixin.qq.com/)，单击右上角的“立即注册”，点击“小程序”模块。
 
